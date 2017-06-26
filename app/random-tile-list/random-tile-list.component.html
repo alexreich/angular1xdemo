@@ -1,0 +1,30 @@
+﻿    <div class="tabbable tabs-below" ng-init="selectedTab = 1;">
+        <ul class="nav nav-pills nav-justified">
+            <li ng-class="{active: selectedTab == 1}">
+                <a href="#" ng-click="selectedTab = 1;">Title 1</a>
+            </li>
+            <li ng-class="{active: selectedTab == 2}">
+                <a href="#" ng-click="selectedTab = 2;">Title 2</a>
+            </li>
+        </ul>
+        <ul class="nav nav-pills nav-justified">
+            <li ng-class="{active: selectedTab == 3}">
+                <a href="#" ng-click="selectedTab = 3;">Title 3</a>
+            </li>
+            <li ng-class="{active: selectedTab == 4}">
+                <a href="#" ng-click="selectedTab = 4;">Title 4</a>
+            </li>
+        </ul>
+
+        <!--<ul class="nav nav-pills nav-justified">
+            <li ng-repeat="tile in $ctrl.ths" ng-class="{active: selectedTab == {{tile.id}} ? null}">
+                <a ng-click="selectedTab = tile.id; $ctrl.tileClick(tile)">{{tile.title}}</a>
+            </li>
+        </ul>-->
+
+        <div ng-repeat="tile in $ctrl.ths">
+            <div class="tab-content" ng-show="selectedTab == {{tile.id}}">
+                <random-tile-expanded tile="tile"></random-tile-expanded>
+            </div>
+        </div>
+</div>

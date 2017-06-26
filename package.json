@@ -20,7 +20,10 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
+    "node-sass": "^4.5.3",
     "protractor": "^4.0.9",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
     "source-map-loader": "^0.2.1",
     "typescript": "^2.2.2",
     "webpack": "^2.2.1"

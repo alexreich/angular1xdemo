@@ -1,3 +1,31 @@
+Angular 1.X Competency Demonstration
+
+## Background
+
+I've used Angular 2/4 for the last 2 years but have not been exposed to Angular 1. This code sample is an attempt to show my skils in a limited project (time and scope).
+
+## Seed Project
+
+As Angular 1.X has long since been retired, finding information on the internet is a challenge as most google searches return the later (and incompatible) version, a Reversi Clone (Othello) was chosen as it was opinionated (webpack + typescript), info is below.
+
+## Models & Services
+
+A Tile model a "simulation" service was created to help shuttle data between components. Real code would likely make a REST call and return an Observable.
+
+## UI
+
+- file structure: HTML, Typescript File, SCSS (sass file) per folder - in the future an entire feature (Tiles) would go into a parent folder
+
+- random-tile-list component: In the use-case 4 hard-coded tiles are used w/a break between 2 and 3, the dyanmic code (commented out) was included for future uses (would need to be width constrained to prevent wrap).
+
+- random-tile-expanded component: The detail component simply shows the Tile passed from the list component
+
+## SASS
+
+While time did not prevent a full implementation (added it to webpack, but did not troubleshoot). Basic scss files are included but not tested. Most modern Angular projects include compiled style sheets by default.
+
+---
+
 Othello
 ==========
 

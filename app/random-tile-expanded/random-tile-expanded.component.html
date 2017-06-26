@@ -1,0 +1,12 @@
+﻿<div class="score-container">
+    <h3>{{ $ctrl.tile.title }}</h3>
+    
+    <div class="score text-center">
+        <img src="{{ $ctrl.tile.picture }}" width="25" height="25" />
+    </div>
+    {{ $ctrl.tile.text }}
+    <div>
+        <span style="float:left">Added By {{ $ctrl.tile.addedBy }}</span>
+        <span style="float:right">Looked by {{ $ctrl.tile.viewedBy }}</span>
+    </div>
+</div>
