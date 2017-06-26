@@ -28,7 +28,8 @@ export enum TileMode {
 	CANCELLED = 3,
 	ATTACK = 1,
 	SAVE = 2
-}```
+}
+```
 
 ## UI
 
