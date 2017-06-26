@@ -7,11 +7,6 @@ import { Tile, TileMode } from "../models/tile";
 	styles: ['./random-tile-expanded.scss'],
 })
 export class RandomTileExpanded {
-	tileInfo: any = {
-		"title": "Heading",
-		"addedBy": "Added By",
-		"viewedBy": "Viewed By"
-	};
 	@Input() tile: Tile;
 
     private $ctrl: RandomTileExpanded;
