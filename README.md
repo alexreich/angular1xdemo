@@ -10,7 +10,7 @@ As Angular 1.X has long since been retired, finding information on the internet 
 
 ## Models & Services
 
-A Tile model a "simulation" service was created to help shuttle data between components. Real code would likely make a REST call and return an Observable.
+A Tile model and a "simulation" service was created to help shuttle data between components, real code would likely make a REST call and return an Observable.
 
 ## UI
 
