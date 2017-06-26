@@ -13,6 +13,23 @@ As Angular 1.X has long since been retired, finding information on the internet 
 
 A Tile model and a "simulation" service was created to help shuttle data between components, real code would likely make a REST call and return an Observable.
 
+```export class Tile {
+	public id: number;
+	public title: string;
+	public picture: string;
+	public addedBy: string;
+	public viewedBy: string;
+	public text: string;
+	public tileMode: TileMode; 
+}
+
+export enum TileMode {
+	NEW = 0,
+	CANCELLED = 3,
+	ATTACK = 1,
+	SAVE = 2
+}```
+
 ## UI
 
 - file structure: HTML, Typescript File, SCSS (sass file) per folder - in the future an entire feature (Tiles) would go into a parent folder
